@@ -17,7 +17,9 @@ const PORT = process.env.PORT || 8000;
 // Middleware
 app.use(bodyParser.json()); // Add this line to parse JSON bodies
 app.use(cors({
-
+    origin: ["https://ayodhya-bhraman-frontend.vercel.app"],
+    methods: ['POST', 'GET'],
+    credentials: true,
 }));
 
 
