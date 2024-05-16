@@ -5,25 +5,19 @@ const HotelSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    
-    image: {
+    contactNo: {
+        type: Number,
+        required: true
+    },
+    category: {
         type: String,
         required: true
     },
-    contactNo:{
-        type:Number,
-        required:true
-    },
-    category:{
-        type:String,
-        required:true
-    },
-    minPrice:{
+    minPrice: {
         type: String,
-        required: true 
-    }
-    ,
-    maxPrice:{
+        required: true
+    },
+    maxPrice: {
         type: String,
         required: true
     },
