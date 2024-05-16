@@ -17,10 +17,7 @@ const PORT = process.env.PORT || 8000;
 // Middleware
 app.use(bodyParser.json()); // Add this line to parse JSON bodies
 app.use(cors({
-    origin: ["https://vercel.com/nishita-ranis-projects/ayodhya-bhraman-frontend"],
-    methods: ['POST', 'GET'],
-    credentials: true,
-    exposedHeaders: ['Content-Disposition'], // Allow Content-Disposition header for file downloads
+
 }));
 
 
