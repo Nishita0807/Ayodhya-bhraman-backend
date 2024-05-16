@@ -19,7 +19,7 @@ const upload = multer({ storage: storage });
 // Add a new hotel with image upload
 router.post('/', upload.single('image'), async (req, res) => {
     const { name, contactNo, category, minPrice, maxPrice, mapLocation } = req.body;
-    const image = req.file ? req.file.path : ''; // File path of the uploaded image
+    const image = req.file ? req.file.filename : ''; // Get the filename of the uploaded image
     try {
         const newHotel = new Hotel({
             name,
